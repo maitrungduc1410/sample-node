@@ -1,4 +1,5 @@
-FROM node:22-alpine
+# make sure to set platform if building on Apple chip
+FROM --platform=linux/amd64 node:22-alpine
 
 WORKDIR /app
 
