@@ -4,7 +4,9 @@ const port = 3000;
 const os = require('os');
 
 app.get("/", (req, res) => {
-  res.send(`Hostname: ${os.hostname()}`);
+  const message = `Hostname: ${os.hostname()}`
+  console.log(message)
+  res.send(message);
 });
 
 app.listen(port, () => {
